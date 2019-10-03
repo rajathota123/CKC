@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Testsuites" thread-count="1" verbose="1"
+	preserve-order="true">
+
+	<listeners>
+		<listener class-name="com.cisco.util.MyReporterListener" />
+		<listener
+			class-name="com.cisco.util.ListenerToChangeTestName" />
+	</listeners>
+
+
+	<suite-files>
+		<suite-file path="AdminTab/AdminOrc_testsuite.xml" />
+
+
+
+
+
+
+
+
+
+	</suite-files>
+
+
+
+</suite>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="AdminTestSuite_RegionTest">
+
+
+	<parameter name="accessToken_For" value="microservices" />
+
+	<parameter name="RunOn" value="local" />
+	<!-- parameter name="app" value="keymanagment" / -->
+	<parameter name="app" value="admin" />
+
+	<parameter name="accessToken_For" value="not req" />
+	<parameter name="RabitMq" value="NO" />
+
+
+
+	<listeners>
+		<listener class-name="com.cisco.util.MyReporterListener" />
+		<listener
+			class-name="com.cisco.util.ListenerToChangeTestName" />
+	</listeners>
+
+	<test name="DashboardLoginTest">
+
+		<classes>
+
+			<class
+				name="com.cisco.testscripts.ui.dashboard.DashboardLoginTest" />
+		</classes>
+
+	</test>
+
+
+	<!-- <test name="AdminTestForUserTestAndRegionTestFunctionalities"> <classes> 
+		<class name="com.cisco.testscripts.ui.adminPortal.UserTest"> <methods> <include 
+		name ="testCreateRegion"/> <include name ="testCreateUsers"/> <include name 
+		="testassignUserToGroup"/> <include name ="testassignLocationsToUser"/> <include 
+		name ="testSearchUser"/> <include name ="testChangePassword"/> <include name 
+		="testPasswordExpiryUsers"/> <include name ="testLoginCheckAfterPasswordReset"/> 
+		<include name ="testForgetPassword"/> <include name ="testUpdateUsers"/> 
+		<include name ="updateRegionTest"/> <include name ="deleteRegionTest"/> <include 
+		name ="testDeleteUser"/> </methods> </class> </classes> </test> <test name="RegionTests"> 
+		<classes> <class name="com.cisco.testscripts.ui.adminPortal.RegionTest"> 
+		<methods> <include name="testCreateRegion"/> <include name ="updateRegionTest"/> 
+		<include name="deleteRegionTest"/> <include name="createRegionNegativeTest"/> 
+		</methods> </class> </classes> </test> -->
+
+
+	<!-- <test name="CreateRegionToCreateUser"> <classes> <class name="com.cisco.testscripts.ui.adminPortal.UserTest"> 
+		<methods> <include name="testCreateRegion" /> </methods> </class> </classes> 
+		</test> <test name="CreateUserAndAssignGroupAndLocationToUser"> <classes> 
+		<class name="com.cisco.testscripts.ui.adminPortal.UserTest"> <methods> <include 
+		name="testCreateUsers" /> <include name="testassignUserToGroup" /> <include 
+		name="testassignLocationsToUser" /> <include name="testVerifyAssignedUserAndLocation" 
+		/> </methods> </class> </classes> </test> <test name="UserSearchAndUpdateRegionAndUpdateUser"> 
+		<classes> <class name="com.cisco.testscripts.ui.adminPortal.UserTest"> <methods> 
+		<include name="testSearchUser" /> <include name="updateRegionTest" /> <include 
+		name="testUpdateUsers" /> </methods> </class> </classes> </test> <test name="DeleteRegionAndDeleteUser"> 
+		<classes> <class name="com.cisco.testscripts.ui.adminPortal.UserTest"> <methods> 
+		<include name="deleteRegionTest" /> <include name="testDeleteUser" /> </methods> 
+		</class> </classes> </test> <test name="NegativeTestForUserTest"> <classes> 
+		<class name="com.cisco.testscripts.ui.adminPortal.UserTest"> <methods> <include 
+		name="testcreateusernegativescenario" /> </methods> </class> </classes> </test> -->
+
+	<test name="CreateRegionForRegionTest">
+		<classes>
+			<class name="com.cisco.testscripts.ui.adminPortal.RegionTest">
+				<methods>
+					<include name="testCreateRegion" />
+				</methods>
+
+			</class>
+
+		</classes>
+	</test>
+
+	<test name="UpdateAndDeleteRegionForRegionTest">
+		<classes>
+			<class name="com.cisco.testscripts.ui.adminPortal.RegionTest">
+				<methods>
+					<include name="updateRegionTest" />
+					<include name="deleteRegionTest" />
+				</methods>
+
+			</class>
+
+		</classes>
+	</test>
+
+	<!-- <test name="NegativeTestForRegionTest"> <classes> <class name="com.cisco.testscripts.ui.adminPortal.RegionTest"> 
+		<methods> <include name="createRegionNegativeTest"/> </methods> </class> 
+		</classes> </test> -->
+</suite> 

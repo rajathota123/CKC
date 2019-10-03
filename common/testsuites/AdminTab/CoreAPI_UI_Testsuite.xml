@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+       
+<suite name="AdminTestSuite ">
+
+
+<parameter name="accessToken_For" value="microservices" />
+   
+    <parameter name="RunOn"  value="local"/>
+    <!--  parameter name="app" value="keymanagment" /-->	
+    <parameter name="app" value="admin" />	
+      
+    <parameter name="accessToken_For"  value="not req" />
+    <parameter name="RabitMq" value="NO" />
+
+
+
+		<listeners>
+		<listener class-name="com.cisco.util.MyReporterListener"/>
+	   <listener class-name="com.cisco.util.ListenerToChangeTestName"/>  
+        </listeners>
+        
+   <suite-files>
+   
+    <suite-file path="AdminUser_Region_testsuite.xml" /> 
+    <suite-file path="AdminRegion_testsuite.xml"/> 
+    <suite-file path="AdminPassword_testsuite.xml" /> 
+ 
+  </suite-files> 
+	
+	
+</suite> 

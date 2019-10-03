@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>TestNG:  DataSetsTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>DataSetsTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Oct 03 13:04:20 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>415 seconds (415309 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.cisco.testscripts.ui.administration.DataSetsTest.CreateTemplateCustomcAuthTest()'><b>CreateTemplateCustomcAuthTest</b><br>Test class: com.cisco.testscripts.ui.administration.DataSetsTest<br>Parameters: {PayloadText={"username":"praguecustomer@prague-city.com","password": "VbY9xm@Z8","scope":"device_d572227f-ea5a-1175-3809-2362ba35dee0-1543555796737"}, Method=POST, Password=, ParamsValue=, FileType=HTTP, Name=AT_H_Custom_Auth, URL=http://prague.quantela.com/dsapi/v1/accounts/cdptoken?domain=prague-city.com, testName=CreateTemplateCustomcAuthTest, BaseURL=http://prague.quantela.com/t/prague-city.com, AuthScript=output['request']['headers']['Authorization']="Bearer "+input.connection.response.data["access_token"];, UserName=, ParamsKey=, HeaderKey=, Authstrategy=Custom Auth, PayloadType= raw , Tags=TagsTest, Description=DescriptionTest, HeaderValue=}, org.testng.TestRunner@11f28957<br/>
+<a href="#Output-1177546771" onClick='toggleBox("Output-1177546771", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1177546771" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1177546771">
+HTTP File Type Created<br/>
+Connection Template Created Successfully<br/>
+CustomAuth_Template Created Successfully<br/>
+Created HTTP template: AT_H_Custom_Auth030813<br/>
+Validated Template Successfully <br/>
+</div>
+</td>
+<td></td>
+<td>140</td>
+<td>[DataSetsTest passed=0 failed=0 skipped=0]</td></tr>
+<tr>
+<td title='com.cisco.testscripts.ui.administration.DataSetsTest.CreateTemplateNoAuthTest()'><b>CreateTemplateNoAuthTest</b><br>Test class: com.cisco.testscripts.ui.administration.DataSetsTest<br>Parameters: {PayloadText=, Method=, Password=, ParamsValue=ParamsValueTest, FileType=HTTP, Name=AT_H_No_Auth, URL=, testName=CreateTemplateNoAuthTest, BaseURL=http://api.steora.com/v1/partners/statistics, AuthScript=, UserName=, ParamsKey=ParamsKeyTest, HeaderKey=API-TOKEN, Authstrategy=No Auth, PayloadType=, Tags=TagsTest, Description=DescriptionTest, HeaderValue=OM7G6un05g7NihPf3Tmt2Arsa3hgXUcWkO8xKr+A}, org.testng.TestRunner@11f28957<br/>
+<a href="#Output-741236338" onClick='toggleBox("Output-741236338", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-741236338" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-741236338">
+HTTP File Type Created<br/>
+Connection Template Created Successfully<br/>
+NoAuth_Template Created Successfully<br/>
+Created HTTP template: AT_H_No_Auth030451<br/>
+Validated Template Successfully <br/>
+</div>
+</td>
+<td></td>
+<td>100</td>
+<td>[DataSetsTest passed=0 failed=0 skipped=0]</td></tr>
+<tr>
+<td title='com.cisco.testscripts.ui.administration.DataSetsTest.TestCreateTemplateBasicAuth()'><b>TestCreateTemplateBasicAuth</b><br>Test class: com.cisco.testscripts.ui.administration.DataSetsTest<br>Parameters: {PayloadText=, Method=, Password=ZXasqw12, ParamsValue=ParamsValueTest, FileType=HTTP, Name=AT_H_Basic_Auth, URL=, testName=TestCreateTemplateBasicAuth, BaseURL=http://ptc-cdee-test-rest-client.herokuapp.com/, AuthScript=, UserName=quantela, ParamsKey=ParamsKeyTest, HeaderKey=HeaderKeyTest, Authstrategy=Basic Auth, PayloadType=, Tags=TagsTest, Description=DescriptionTest, HeaderValue=HeaderValueTest}, org.testng.TestRunner@11f28957<br/>
+<a href="#Output-1612759532" onClick='toggleBox("Output-1612759532", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1612759532" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1612759532">
+HTTP File Type Created<br/>
+Connection Template Created Successfully<br/>
+Created HTTP template: AT_H_Basic_Auth030627<br/>
+Validated Template Successfully <br/>
+</div>
+</td>
+<td></td>
+<td>106</td>
+<td>[DataSetsTest passed=0 failed=0 skipped=0]</td></tr>
+<tr>
+<td title='com.cisco.testscripts.ui.administration.DataSetsTest.TestCreateTemplateFile()'><b>TestCreateTemplateFile</b><br>Test class: com.cisco.testscripts.ui.administration.DataSetsTest<br>Parameters: {PayloadText=, Method=, Password=, ParamsValue=, FileType=FILE, Name=AT_FILE, URL=, testName=TestCreateTemplateFile, BaseURL=, AuthScript=, UserName=, ParamsKey=, HeaderKey=, Authstrategy=, PayloadType=, Tags=TagsTest, Description=DescriptionTest, HeaderValue=}, org.testng.TestRunner@11f28957<br/>
+<a href="#Output-2038285216" onClick='toggleBox("Output-2038285216", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2038285216" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2038285216">
+Connection Template Created Successfully<br/>
+Created FILE template: AT_FILE031034<br/>
+Validated Template Successfully <br/>
+</div>
+</td>
+<td></td>
+<td>49</td>
+<td>[DataSetsTest passed=0 failed=0 skipped=0]</td></tr>
+<tr>
+<td title='com.cisco.testscripts.ui.administration.DataSetsTest.testCreateTemplate()'><b>testCreateTemplate</b><br>Test class: com.cisco.testscripts.ui.administration.DataSetsTest</td>
+<td></td>
+<td>17</td>
+<td>[DataSetsTest passed=0 failed=0 skipped=0]</td></tr>
+</table><p>
+</body>
+</html>

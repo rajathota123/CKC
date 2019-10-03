@@ -1,0 +1,327 @@
+<html>
+<head>
+<title>TestNG:  RegionTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>RegionTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Sep 16 16:51:51 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>86 seconds (86152 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.cisco.testscripts.ui.administration.RegionTest.testCreateRegion()'><b>testCreateRegion</b><br>Test class: com.cisco.testscripts.ui.administration.RegionTest<br>Parameters: {testName=CreateRegionTest, RegionName=TestIndia, LatLong=[[22.3094258412002,67.67578125],[28.998531814051795,70.04882812500001],[35.137879119634185,74.04785156250001],[36.59788913307022,78.75000000000001],[27.566721430409736,96.1083984375],[24.766784522874453,95.27343750000001],[19.518375478601566,86.70410156250001],[6.882800241767556,77.38769531250001]], country=India}, org.testng.TestRunner@4ad3d266</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(@id,&apos;app_mainView_regionManagementView_regionsSubToolbar_&apos;)]&quot;}
+  (Session info: chrome=76.0.3809.132)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;IQTLAPTOP-185&apos;, ip: &apos;172.20.20.132&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_222&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\JASHWA~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.132, webStorageEnabled: true}
+Session ID: d19ba87a88b47c0618e0a8ce0d07bc22
+*** Element info: {Using=xpath, value=//*[contains(@id,&apos;app_mainView_regionManagementView_regionsSubToolbar_&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.cisco.base.BaseTest.findElement(BaseTest.java:360)
+	at com.cisco.base.BaseTest.isElementPresnet(BaseTest.java:422)
+	at com.cisco.base.BaseTest.getLocatorType(BaseTest.java:406)
+	at com.cisco.base.BaseTest.click(BaseTest.java:451)
+	at com.cisco.commonfunctions.uiapplibrary.RegionPage.clickRegionTab(RegionPage.java:27)
+	at com.cisco.testscripts.ui.administration.RegionTest.testCreateRegion(RegionTest.java:49)
+	at com.cisco.base.main.main(main.java:109)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace670517043", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace670517043'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(@id,&apos;app_mainView_regionManagementView_regionsSubToolbar_&apos;)]&quot;}
+  (Session info: chrome=76.0.3809.132)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;IQTLAPTOP-185&apos;, ip: &apos;172.20.20.132&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_222&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\JASHWA~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.132, webStorageEnabled: true}
+Session ID: d19ba87a88b47c0618e0a8ce0d07bc22
+*** Element info: {Using=xpath, value=//*[contains(@id,&apos;app_mainView_regionManagementView_regionsSubToolbar_&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.cisco.base.BaseTest.findElement(BaseTest.java:360)
+	at com.cisco.base.BaseTest.isElementPresnet(BaseTest.java:422)
+	at com.cisco.base.BaseTest.getLocatorType(BaseTest.java:406)
+	at com.cisco.base.BaseTest.click(BaseTest.java:451)
+	at com.cisco.commonfunctions.uiapplibrary.RegionPage.clickRegionTab(RegionPage.java:27)
+	at com.cisco.testscripts.ui.administration.RegionTest.testCreateRegion(RegionTest.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at com.cisco.base.main.main(main.java:109)
+</pre></div></td>
+<td>65</td>
+<td>[RegionTest passed=0 failed=0 skipped=0]</td></tr>
+<tr>
+<td title='com.cisco.testscripts.ui.administration.RegionTest.testCreateRegion()'><b>testCreateRegion</b><br>Test class: com.cisco.testscripts.ui.administration.RegionTest<br>Parameters: {testName=CreateRegionTest, RegionName=Karnataka, LatLong=[[12.811410636134136,75.01464843750001],[12.457641498077953,75.38818359375],[12.25373621099099,75.52001953125001],[11.985199870481015,75.750732421875],[11.899211486551746,76.10229492187501],[11.845454921437558,76.26708984375001],[11.737910095072415,76.39892578125001],[11.544223913790447,76.62963867187501],[11.608800948900797,76.81640625000001],[11.877710133058253,76.94824218750001],[11.737910095072415,77.12402343750001],[11.791687775852699,77.38769531250001],[11.963705334788214,77.552490234375],[12.135613531776684,77.75024414062501],[12.232263278505036,77.530517578125],[12.489822489582522,77.60742187500001],[12.629227069205626,77.58544921875001],[12.661386598650374,77.70629882812501],[12.811410636134136,77.77221679687501],[12.875679379399719,77.91503906250001],[12.82212323415273,78.03588867187501],[12.77927011053118,78.167724609375],[12.736409716049174,78.22265625000001],[13.057684432515353,78.46435546875],[13.271636346979058,78.58520507812501],[13.3571645530105,78.486328125],[13.645597469288157,78.37646484375001],[13.67762396403389,78.13476562500001],[13.912351219641698,78.04687500000001],[13.94434112746653,77.8271484375],[13.795017105369865,77.60742187500001],[13.933678317083224,77.39868164062501],[14.232049638841904,77.33276367187501],[14.370445854740916,77.14599609375001],[14.285289034151205,77.01416015625001],[14.41301212052331,76.87133789062501],[14.65760978809802,76.76147460937501],[14.848843963053076,76.83837890625001],[15.029298806999243,76.82739257812501],[15.018688020618477,77.00317382812501],[15.177794266610686,77.14599609375001],[15.400341547698332,77.05810546875001],[15.53798991439951,76.98120117187501],[15.696700732299899,77.05810546875001],[15.960943872499774,77.09106445312501],[15.971506392149326,77.27783203125],[15.971506392149326,77.45361328125001],[16.351383399887105,77.552490234375],[16.446238009528603,77.33276367187501],[16.488380755661204,77.2119140625],[16.667384839805166,77.44262695312501],[16.982865347812794,77.48657226562501],[17.140407533667137,77.43164062500001],[17.255853693205008,77.33276367187501],[17.444609639662026,77.58544921875001],[17.559864518349293,77.64038085937501],[17.62269993916268,77.47558593750001],[17.87382212281439,77.552490234375],[18.082820037588153,77.56347656250001],[18.249839475454273,77.54150390625001],[18.33328912730793,77.44262695312501],[18.354145256562504,77.33276367187501],[18.458388077619066,77.31079101562501],[18.374998867411744,77.20092773437501],[18.228970791100735,77.10205078125001],[18.145471042160526,77.03613281250001],[18.17678813226924,76.92626953125001],[18.072376026170357,76.937255859375],[17.96790179358881,76.88232421875001],[17.852908752395038,76.73950195312501],[17.769230706455986,76.66259765625],[17.75876819239186,76.43188476562501],[17.62269993916268,76.38793945312501],[17.46557050678084,76.322021484375],[17.33976920592787,76.300048828125],[17.360742097320365,76.17919921875001],[17.360742097320365,75.99243164062501],[17.444609639662026,75.82763671875001],[17.497007283335265,75.662841796875],[17.444609639662026,75.58593750000001],[17.329281861103002,75.56396484375001],[17.203387092292807,75.61889648437501],[17.066904392952065,75.62988281250001],[16.94083169157409,75.46508789062501],[16.91981133901014,75.28930664062501],[16.91981133901014,75.05859375000001],[16.91981133901014,74.94873046875001],[16.83570649237428,74.86083984375001],[16.73052289516403,74.70703125000001],[16.604225946921304,74.57519531250001],[16.551577669052772,74.37744140625001],[16.4673105279158,74.36645507812501],[16.40408611123707,74.31152343750001],[16.340841149077526,74.31152343750001],[16.24593533711515,74.41040039062501],[16.07710088414171,74.41040039062501],[15.992629759291605,74.31152343750001],[15.908122926654105,74.39941406250001],[15.781296094991726,74.34448242187501],[15.781296094991726,74.20166015625001],[15.717852871666487,74.14672851562501],[15.601488984031981,74.20166015625001],[15.463882933810115,74.25659179687501],[15.304993085282986,74.30053710937501],[15.188397103836174,74.30053710937501],[15.018688020618477,74.28955078125001],[14.912551214075819,74.20166015625001],[14.870081804330976,74.17968750000001],[14.710747237658135,74.17968750000001],[14.646980749690425,74.25659179687501],[14.487483520200366,74.31152343750001],[14.423652418198953,74.35546875000001],[14.274642161177127,74.38842773437501],[14.146840519655369,74.45434570312501],[14.029625844707118,74.54223632812501],[13.891022155611548,74.56420898437501],[13.741663876163068,74.61914062500001],[13.581531449511106,74.65209960937501],[13.3999173031845,74.70703125000001],[13.260943199418122,74.70703125000001],[13.175381116231183,74.71801757812501],[12.91851606049351,74.79492187500001],[12.907807577897248,74.87182617187501]], country=Karnataka}, org.testng.TestRunner@4ad3d266</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;button _ngcontent-c15=&quot;&quot; aria-haspopup=&quot;true&quot; class=&quot;dropdown-toggle mat-icon-button ng-star-inserted&quot; mat-icon-button=&quot;&quot; vrdropdowntoggle=&quot;&quot; title=&quot;Notifications&quot; aria-expanded=&quot;true&quot;&gt;...&lt;/button&gt; is not clickable at point (1249, 20). Other element would receive the click: &lt;div class=&quot;cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=76.0.3809.132)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;IQTLAPTOP-185&apos;, ip: &apos;172.20.20.132&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_222&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\JASHWA~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.132, webStorageEnabled: true}
+Session ID: d19ba87a88b47c0618e0a8ce0d07bc22
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.cisco.base.BaseTest.click(BaseTest.java:451)
+	at com.cisco.base.BaseTest.selectMenuToolBar(BaseTest.java:795)
+	at com.cisco.testscripts.ui.administration.RegionTest.testCreateRegion(RegionTest.java:32)
+	at com.cisco.base.main.main(main.java:109)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1479100519", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1479100519'><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;button _ngcontent-c15=&quot;&quot; aria-haspopup=&quot;true&quot; class=&quot;dropdown-toggle mat-icon-button ng-star-inserted&quot; mat-icon-button=&quot;&quot; vrdropdowntoggle=&quot;&quot; title=&quot;Notifications&quot; aria-expanded=&quot;true&quot;&gt;...&lt;/button&gt; is not clickable at point (1249, 20). Other element would receive the click: &lt;div class=&quot;cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=76.0.3809.132)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;IQTLAPTOP-185&apos;, ip: &apos;172.20.20.132&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_222&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\JASHWA~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.132, webStorageEnabled: true}
+Session ID: d19ba87a88b47c0618e0a8ce0d07bc22
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.cisco.base.BaseTest.click(BaseTest.java:451)
+	at com.cisco.base.BaseTest.selectMenuToolBar(BaseTest.java:795)
+	at com.cisco.testscripts.ui.administration.RegionTest.testCreateRegion(RegionTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at com.cisco.base.main.main(main.java:109)
+</pre></div></td>
+<td>10</td>
+<td>[RegionTest passed=0 failed=0 skipped=0]</td></tr>
+<tr>
+<td title='com.cisco.testscripts.ui.administration.RegionTest.testCreateRegion()'><b>testCreateRegion</b><br>Test class: com.cisco.testscripts.ui.administration.RegionTest<br>Parameters: {testName=CreateRegionTest, RegionName=Bangalore, LatLong=[[12.728665691134314,77.29980468750001],[12.897391547027379,77.22015380859376],[13.009812371233274,77.19818115234376],[13.154278519910049,77.00042724609375],[13.322714768461747,77.31353759765626],[13.544443739856172,77.39044189453126],[13.370817948556219,77.69256591796876],[13.325387418598796,78.123779296875],[13.1114825657443,78.01116943359376],[12.96966790355784,77.85736083984376],[12.776884599485642,77.72003173828126],[12.739381797554255,77.72003173828126],[12.696514656799776,77.68432617187501],[12.675078374906766,77.61566162109375],[12.634880486578467,77.530517578125],[12.653640289134168,77.40692138671876],[12.683117192161808,77.33001708984376]], country=Bangalore}, org.testng.TestRunner@4ad3d266</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;button _ngcontent-c15=&quot;&quot; aria-haspopup=&quot;true&quot; class=&quot;dropdown-toggle mat-icon-button ng-star-inserted&quot; mat-icon-button=&quot;&quot; vrdropdowntoggle=&quot;&quot; title=&quot;Notifications&quot; aria-expanded=&quot;true&quot;&gt;...&lt;/button&gt; is not clickable at point (1249, 20). Other element would receive the click: &lt;div class=&quot;cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=76.0.3809.132)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;IQTLAPTOP-185&apos;, ip: &apos;172.20.20.132&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_222&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\JASHWA~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.132, webStorageEnabled: true}
+Session ID: d19ba87a88b47c0618e0a8ce0d07bc22
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.cisco.base.BaseTest.click(BaseTest.java:451)
+	at com.cisco.base.BaseTest.selectMenuToolBar(BaseTest.java:795)
+	at com.cisco.testscripts.ui.administration.RegionTest.testCreateRegion(RegionTest.java:32)
+	at com.cisco.base.main.main(main.java:109)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2082232630", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2082232630'><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;button _ngcontent-c15=&quot;&quot; aria-haspopup=&quot;true&quot; class=&quot;dropdown-toggle mat-icon-button ng-star-inserted&quot; mat-icon-button=&quot;&quot; vrdropdowntoggle=&quot;&quot; title=&quot;Notifications&quot; aria-expanded=&quot;true&quot;&gt;...&lt;/button&gt; is not clickable at point (1249, 20). Other element would receive the click: &lt;div class=&quot;cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=76.0.3809.132)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;IQTLAPTOP-185&apos;, ip: &apos;172.20.20.132&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_222&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\JASHWA~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.132, webStorageEnabled: true}
+Session ID: d19ba87a88b47c0618e0a8ce0d07bc22
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.cisco.base.BaseTest.click(BaseTest.java:451)
+	at com.cisco.base.BaseTest.selectMenuToolBar(BaseTest.java:795)
+	at com.cisco.testscripts.ui.administration.RegionTest.testCreateRegion(RegionTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at com.cisco.base.main.main(main.java:109)
+</pre></div></td>
+<td>10</td>
+<td>[RegionTest passed=0 failed=0 skipped=0]</td></tr>
+</table><p>
+</body>
+</html>

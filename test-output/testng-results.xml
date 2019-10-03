@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+    <line>
+      <![CDATA[HTTP File Type Created]]>
+    </line>
+    <line>
+      <![CDATA[Connection Template Created Successfully]]>
+    </line>
+    <line>
+      <![CDATA[NoAuth_Template Created Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Created HTTP template: AT_H_No_Auth030451]]>
+    </line>
+    <line>
+      <![CDATA[Validated Template Successfully ]]>
+    </line>
+    <line>
+      <![CDATA[HTTP File Type Created]]>
+    </line>
+    <line>
+      <![CDATA[Connection Template Created Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Created HTTP template: AT_H_Basic_Auth030627]]>
+    </line>
+    <line>
+      <![CDATA[Validated Template Successfully ]]>
+    </line>
+    <line>
+      <![CDATA[HTTP File Type Created]]>
+    </line>
+    <line>
+      <![CDATA[Connection Template Created Successfully]]>
+    </line>
+    <line>
+      <![CDATA[CustomAuth_Template Created Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Created HTTP template: AT_H_Custom_Auth030813]]>
+    </line>
+    <line>
+      <![CDATA[Validated Template Successfully ]]>
+    </line>
+    <line>
+      <![CDATA[Connection Template Created Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Created FILE template: AT_FILE031034]]>
+    </line>
+    <line>
+      <![CDATA[Validated Template Successfully ]]>
+    </line>
+  </reporter-output>
+  <suite name="AdminTestSuite_UserTest" duration-ms="415309" started-at="2019-10-03T07:34:20Z" finished-at="2019-10-03T07:41:15Z">
+    <groups>
+    </groups>
+    <test name="DataSetsTest" duration-ms="415309" started-at="2019-10-03T07:34:20Z" finished-at="2019-10-03T07:41:15Z">
+      <class name="com.cisco.testscripts.ui.administration.DataSetsTest">
+        <test-method status="PASS" signature="ConfigDetails(java.lang.String)[pri:0, instance:[DataSetsTest passed=0 failed=0 skipped=0]]" name="ConfigDetails" is-config="true" duration-ms="19774" started-at="2019-10-03T13:04:00Z" finished-at="2019-10-03T13:04:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigDetails -->
+        <test-method status="PASS" signature="testCreateTemplate()[pri:1, instance:[DataSetsTest passed=0 failed=0 skipped=0]]" name="testCreateTemplate" duration-ms="17303" started-at="2019-10-03T13:04:20Z" finished-at="2019-10-03T13:04:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateTemplate -->
+        <test-method status="PASS" signature="beforemethod(org.testng.ITestResult)[pri:0, instance:[DataSetsTest passed=0 failed=0 skipped=0]]" name="beforemethod" is-config="true" duration-ms="0" started-at="2019-10-03T13:04:20Z" finished-at="2019-10-03T13:04:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCreateTemplate on [DataSetsTest passed=0 failed=0 skipped=0] status=SUCCESS method=DataSetsTest.testCreateTemplate()[pri:1, instance:[DataSetsTest passed=0 failed=0 skipped=0]] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:[DataSetsTest passed=0 failed=0 skipped=0]]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-10-03T13:04:37Z" finished-at="2019-10-03T13:04:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCreateTemplate on [DataSetsTest passed=0 failed=0 skipped=0] status=SUCCESS method=DataSetsTest.testCreateTemplate()[pri:1, instance:[DataSetsTest passed=0 failed=0 skipped=0]] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforemethod(org.testng.ITestResult)[pri:0, instance:[DataSetsTest passed=0 failed=0 skipped=0]]" name="beforemethod" is-config="true" duration-ms="0" started-at="2019-10-03T13:04:37Z" finished-at="2019-10-03T13:04:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCreateTemplate on [DataSetsTest passed=0 failed=0 skipped=0] status=SUCCESS method=DataSetsTest.testCreateTemplate(java.util.Hashtable, org.testng.ITestContext)[pri:2, instance:[DataSetsTest passed=0 failed=0 skipped=0]] output=HTTP File Type Created]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="PASS" signature="testCreateTemplate(java.util.Hashtable, org.testng.ITestContext)[pri:2, instance:[DataSetsTest passed=0 failed=0 skipped=0]]" name="CreateTemplateNoAuthTest" duration-ms="100659" started-at="2019-10-03T13:04:37Z" data-provider="CreateTemplate" finished-at="2019-10-03T13:06:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PayloadText=, Method=, Password=, ParamsValue=ParamsValueTest, FileType=HTTP, Name=AT_H_No_Auth, URL=, testName=CreateTemplateNoAuthTest, BaseURL=http://api.steora.com/v1/partners/statistics, AuthScript=, UserName=, ParamsKey=ParamsKeyTest, HeaderKey=API-TOKEN, Authstrategy=No Auth, PayloadType=, Tags=TagsTest, Description=DescriptionTest, HeaderValue=OM7G6un05g7NihPf3Tmt2Arsa3hgXUcWkO8xKr+A}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@11f28957]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[HTTP File Type Created]]>
+            </line>
+            <line>
+              <![CDATA[Connection Template Created Successfully]]>
+            </line>
+            <line>
+              <![CDATA[NoAuth_Template Created Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Created HTTP template: AT_H_No_Auth030451]]>
+            </line>
+            <line>
+              <![CDATA[Validated Template Successfully ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CreateTemplateNoAuthTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:[DataSetsTest passed=0 failed=0 skipped=0]]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-10-03T13:06:18Z" finished-at="2019-10-03T13:06:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCreateTemplate on [DataSetsTest passed=0 failed=0 skipped=0] status=SUCCESS method=DataSetsTest.testCreateTemplate(java.util.Hashtable, org.testng.ITestContext)[pri:2, instance:[DataSetsTest passed=0 failed=0 skipped=0]] output=HTTP File Type Created]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforemethod(org.testng.ITestResult)[pri:0, instance:[DataSetsTest passed=0 failed=0 skipped=0]]" name="beforemethod" is-config="true" duration-ms="0" started-at="2019-10-03T13:06:18Z" finished-at="2019-10-03T13:06:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCreateTemplate on [DataSetsTest passed=0 failed=0 skipped=0] status=SUCCESS method=DataSetsTest.testCreateTemplate(java.util.Hashtable, org.testng.ITestContext)[pri:2, instance:[DataSetsTest passed=0 failed=0 skipped=0]] output=HTTP File Type Created]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="PASS" signature="testCreateTemplate(java.util.Hashtable, org.testng.ITestContext)[pri:2, instance:[DataSetsTest passed=0 failed=0 skipped=0]]" name="TestCreateTemplateBasicAuth" duration-ms="106501" started-at="2019-10-03T13:06:18Z" data-provider="CreateTemplate" finished-at="2019-10-03T13:08:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PayloadText=, Method=, Password=ZXasqw12, ParamsValue=ParamsValueTest, FileType=HTTP, Name=AT_H_Basic_Auth, URL=, testName=TestCreateTemplateBasicAuth, BaseURL=http://ptc-cdee-test-rest-client.herokuapp.com/, AuthScript=, UserName=quantela, ParamsKey=ParamsKeyTest, HeaderKey=HeaderKeyTest, Authstrategy=Basic Auth, PayloadType=, Tags=TagsTest, Description=DescriptionTest, HeaderValue=HeaderValueTest}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@11f28957]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[HTTP File Type Created]]>
+            </line>
+            <line>
+              <![CDATA[Connection Template Created Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Created HTTP template: AT_H_Basic_Auth030627]]>
+            </line>
+            <line>
+              <![CDATA[Validated Template Successfully ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TestCreateTemplateBasicAuth -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:[DataSetsTest passed=0 failed=0 skipped=0]]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-10-03T13:08:04Z" finished-at="2019-10-03T13:08:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCreateTemplate on [DataSetsTest passed=0 failed=0 skipped=0] status=SUCCESS method=DataSetsTest.testCreateTemplate(java.util.Hashtable, org.testng.ITestContext)[pri:2, instance:[DataSetsTest passed=0 failed=0 skipped=0]] output=HTTP File Type Created]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforemethod(org.testng.ITestResult)[pri:0, instance:[DataSetsTest passed=0 failed=0 skipped=0]]" name="beforemethod" is-config="true" duration-ms="1" started-at="2019-10-03T13:08:04Z" finished-at="2019-10-03T13:08:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCreateTemplate on [DataSetsTest passed=0 failed=0 skipped=0] status=SUCCESS method=DataSetsTest.testCreateTemplate(java.util.Hashtable, org.testng.ITestContext)[pri:2, instance:[DataSetsTest passed=0 failed=0 skipped=0]] output=HTTP File Type Created]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="PASS" signature="testCreateTemplate(java.util.Hashtable, org.testng.ITestContext)[pri:2, instance:[DataSetsTest passed=0 failed=0 skipped=0]]" name="CreateTemplateCustomcAuthTest" duration-ms="140880" started-at="2019-10-03T13:08:04Z" data-provider="CreateTemplate" finished-at="2019-10-03T13:10:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PayloadText={"username":"praguecustomer@prague-city.com","password": "VbY9xm@Z8","scope":"device_d572227f-ea5a-1175-3809-2362ba35dee0-1543555796737"}, Method=POST, Password=, ParamsValue=, FileType=HTTP, Name=AT_H_Custom_Auth, URL=http://prague.quantela.com/dsapi/v1/accounts/cdptoken?domain=prague-city.com, testName=CreateTemplateCustomcAuthTest, BaseURL=http://prague.quantela.com/t/prague-city.com, AuthScript=output['request']['headers']['Authorization']="Bearer "+input.connection.response.data["access_token"];, UserName=, ParamsKey=, HeaderKey=, Authstrategy=Custom Auth, PayloadType= raw , Tags=TagsTest, Description=DescriptionTest, HeaderValue=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@11f28957]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[HTTP File Type Created]]>
+            </line>
+            <line>
+              <![CDATA[Connection Template Created Successfully]]>
+            </line>
+            <line>
+              <![CDATA[CustomAuth_Template Created Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Created HTTP template: AT_H_Custom_Auth030813]]>
+            </line>
+            <line>
+              <![CDATA[Validated Template Successfully ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CreateTemplateCustomcAuthTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:[DataSetsTest passed=0 failed=0 skipped=0]]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-10-03T13:10:25Z" finished-at="2019-10-03T13:10:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCreateTemplate on [DataSetsTest passed=0 failed=0 skipped=0] status=SUCCESS method=DataSetsTest.testCreateTemplate(java.util.Hashtable, org.testng.ITestContext)[pri:2, instance:[DataSetsTest passed=0 failed=0 skipped=0]] output=HTTP File Type Created]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforemethod(org.testng.ITestResult)[pri:0, instance:[DataSetsTest passed=0 failed=0 skipped=0]]" name="beforemethod" is-config="true" duration-ms="0" started-at="2019-10-03T13:10:25Z" finished-at="2019-10-03T13:10:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCreateTemplate on [DataSetsTest passed=0 failed=0 skipped=0] status=SUCCESS method=DataSetsTest.testCreateTemplate(java.util.Hashtable, org.testng.ITestContext)[pri:2, instance:[DataSetsTest passed=0 failed=0 skipped=0]] output=Connection Template Created Successfully]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="PASS" signature="testCreateTemplate(java.util.Hashtable, org.testng.ITestContext)[pri:2, instance:[DataSetsTest passed=0 failed=0 skipped=0]]" name="TestCreateTemplateFile" duration-ms="49939" started-at="2019-10-03T13:10:25Z" data-provider="CreateTemplate" finished-at="2019-10-03T13:11:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PayloadText=, Method=, Password=, ParamsValue=, FileType=FILE, Name=AT_FILE, URL=, testName=TestCreateTemplateFile, BaseURL=, AuthScript=, UserName=, ParamsKey=, HeaderKey=, Authstrategy=, PayloadType=, Tags=TagsTest, Description=DescriptionTest, HeaderValue=}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@11f28957]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Connection Template Created Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Created FILE template: AT_FILE031034]]>
+            </line>
+            <line>
+              <![CDATA[Validated Template Successfully ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TestCreateTemplateFile -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:[DataSetsTest passed=0 failed=0 skipped=0]]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-10-03T13:11:15Z" finished-at="2019-10-03T13:11:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCreateTemplate on [DataSetsTest passed=0 failed=0 skipped=0] status=SUCCESS method=DataSetsTest.testCreateTemplate(java.util.Hashtable, org.testng.ITestContext)[pri:2, instance:[DataSetsTest passed=0 failed=0 skipped=0]] output=Connection Template Created Successfully]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.cisco.testscripts.ui.administration.DataSetsTest -->
+    </test> <!-- DataSetsTest -->
+  </suite> <!-- AdminTestSuite_UserTest -->
+  <suite name="Testsuites" duration-ms="0" started-at="2019-10-03T07:41:15Z" finished-at="2019-10-03T07:41:15Z">
+    <groups>
+    </groups>
+  </suite> <!-- Testsuites -->
+</testng-results>
